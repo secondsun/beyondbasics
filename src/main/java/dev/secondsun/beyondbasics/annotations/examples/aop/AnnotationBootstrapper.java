@@ -1,6 +1,5 @@
-package dev.secondsun.beyondbasics.annotations.examples;
+package dev.secondsun.beyondbasics.annotations.examples.aop;
 
-import net.sf.cglib.proxy.Callback;
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;
 import net.sf.cglib.proxy.MethodProxy;
@@ -8,7 +7,6 @@ import net.sf.cglib.proxy.MethodProxy;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.lang.reflect.Proxy;
 import java.util.ArrayList;
 import java.util.List;
 
