@@ -6,7 +6,11 @@
 
     <groupId>dev.secondsun.beyondbasics.annotations</groupId>
     <artifactId>examples</artifactId>
+    <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>lint</module>
+    </modules>
 
     <dependencies>
         <dependency>
@@ -14,11 +18,7 @@
             <artifactId>cglib</artifactId>
             <version>3.2.10</version>
         </dependency>
-        <dependency>
-            <groupId>com.puppycrawl.tools</groupId>
-            <artifactId>checkstyle</artifactId>
-            <version>7.8.2</version>
-        </dependency>
+
     </dependencies>
 
     <build>
@@ -32,29 +32,7 @@
                 </configuration>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-checkstyle-plugin</artifactId>
-                <version>3.0.0</version>
-                <executions>
-                    <execution>
-                        <id>verify-style</id>
-                        <phase>process-classes</phase>
-                        <goals>
-                            <goal>check</goal>
-                        </goals>
-                    </execution>
-                </executions>
-                <configuration>
-                    <logViolationsToConsole>true</logViolationsToConsole>
-                    <checkstyleRules>
-                        <module name="Checker">
-                            <module name="dev.secondsun.beyondbasics.annotations.examples.lint.AMVCheck">
-                            </module>
-                        </module>
-                    </checkstyleRules>
-                </configuration>
-            </plugin>
+
         </plugins>
     </build>
 
