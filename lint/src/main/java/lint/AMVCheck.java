@@ -1,5 +1,6 @@
 package lint;
 
+import org.sonar.check.Priority;
 import org.sonar.check.Rule;
 import org.sonar.plugins.java.api.IssuableSubscriptionVisitor;
 import org.sonar.plugins.java.api.JavaFileScanner;
@@ -12,7 +13,11 @@ import org.sonar.plugins.java.api.tree.Tree;
 import java.util.Arrays;
 import java.util.List;
 
-@Rule(key = "MyFirstCustomRule")
+@Rule(key = "AnimalMineralVegetableRule",
+     name="An AMV Annotated method takes strings with values of animal, mineral, vegetable",
+        description = "For a method annotated with @AnimalMineralVegetable, it must take one String parameter of value animal, mineral, or vegetable.",
+        priority = Priority.CRITICAL,
+        tags = {"bug"})
 public class AMVCheck extends BaseTreeVisitor implements JavaFileScanner {
 
     private JavaFileScannerContext context;

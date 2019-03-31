@@ -33,7 +33,6 @@
             <scope>provided</scope>
         </dependency>
 
-
         <dependency>
             <groupId>org.sonarsource.java</groupId>
             <artifactId>java-checks-testkit</artifactId>
@@ -67,7 +66,7 @@
                 <configuration>
                     <pluginKey>amv-check</pluginKey>
                     <pluginName>Annotation Rule</pluginName>
-                    <pluginClass>lint.AMVCheck</pluginClass>
+                    <pluginClass>lint.sonar.AMVPlugin</pluginClass>
                     <sonarLintSupported>true</sonarLintSupported>
                     <sonarQubeMinVersion>6.7</sonarQubeMinVersion>
                 </configuration>

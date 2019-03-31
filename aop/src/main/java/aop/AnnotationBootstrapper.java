@@ -1,4 +1,4 @@
-package dev.secondsun.beyondbasics.annotations.examples.aop;
+package aop;
 
 import net.sf.cglib.proxy.Enhancer;
 import net.sf.cglib.proxy.MethodInterceptor;

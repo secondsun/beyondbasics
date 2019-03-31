@@ -1,4 +1,4 @@
-package dev.secondsun.beyondbasics.annotations.examples.aop;
+package aop;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

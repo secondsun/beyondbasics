@@ -1,4 +1,4 @@
-package dev.secondsun.beyondbasics.annotations.examples.aop;
+package aop;
 
 public class RuntimeLoggingDemo {
 
